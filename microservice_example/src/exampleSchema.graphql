@@ -1,0 +1,21 @@
+#Start Queries
+
+type Query @extends{
+    HelloWoks: response
+}
+
+#End Queries
+
+#Start Custom Types
+
+type response @key(fields: "id"){
+    id: Int
+    data: String
+}
+
+#End Custom Types
+
+#Start Scalar types 
+
+#End Scalar types 
+

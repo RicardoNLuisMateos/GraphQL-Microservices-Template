@@ -1,0 +1,22 @@
+version: '3'
+services:
+  gateway:
+    container_name: gateway
+    build: ./gateway
+    ports:
+      - "4000:4000"
+    environment:
+      SERVICE1_HOST: http://localhost:4001/graphql
+    depends_on:
+      - microservice1
+    networks:
+      - microservices
+  microservice1:
+    container_name: microservice_example
+    build: ./microservice_example
+    ports:
+     - "4001:4001"
+    networks:
+      - microservices
+networks:
+  microservices:

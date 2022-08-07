@@ -1,0 +1,5 @@
+subgraphs:
+  microservice_example:
+    routing_url: http://localhost:4001/graphql
+    schema:
+      file: ../../microservice_example/src/exampleSchema.graphql

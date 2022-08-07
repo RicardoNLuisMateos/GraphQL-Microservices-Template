@@ -1,0 +1,9 @@
+subgraphs:
+  microservice1:
+    routing_url: http://localhost:4001/graphql
+    schema:
+      file: ../../microservice/src/nameSchema.graphql
+  microservice2:
+      routing_url: http://localhost:4002/graphql
+      schema:
+        file: ../../microservice/src/nameSchema.graphql
